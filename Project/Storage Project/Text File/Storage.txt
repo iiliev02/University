@@ -1,0 +1,16 @@
+Product Name: cola
+Expiration Date: 2020-7-12
+Entrance Date: 2020-6-11
+Producer: cola
+Unit: litre
+Available Quantity: 200
+Location: 1 - [1] - [1-4]
+Comment: drink
+Product Name: cola
+Expiration Date: 2020-8-10
+Entrance Date: 2020-6-11
+Producer: cola
+Unit: litre
+Available Quantity: 66
+Location: 1 - [2] - [5-6]
+Comment: drink

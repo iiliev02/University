@@ -1,0 +1,8 @@
+2020-6-11->add->cola->litre->325.000000
+2020-6-11->remove->cola->litre->25.000000
+2020-6-11->add->cola->litre->66.000000
+2020-6-11->remove->cola->litre->166.000000
+2020-6-11->add->cola->litre->64.000000
+2020-6-11->add->cola->litre->2.000000
+2020-6-11->add->fanta->litre->145.000000
+2020-6-11->clean->fanta->litre->145.000000
