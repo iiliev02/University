@@ -56,20 +56,29 @@ void printFunction(Section* sections, string unit, int count)
 
 void addFunction(string systemCommand, vector<Storage>& storageProducts, Section*& litreSections, Section*& kgSections, vector<string>& logs)
 {
+	bool isAdd = true;
 	Storage product = addInfoProduct();
 	if (strcmp(product.getUnit(), "litre") == 0 && product.getAvailableQuantity() <= 400.0 && isValidDate(product.getExpirationDate()))
 	{
-		addProduct(litreSections, storageProducts, product, countLitreSection);
+		addProduct(litreSections, storageProducts, product, countLitreSection, isAdd);
 		addLog(logs, systemCommand, product.getProductName(), product.getUnit(), product.getAvailableQuantity());
+		if (isAdd)
+		{
+			printMessages(1);
+		}
 	}
 	else if (strcmp(product.getUnit(), "kg") == 0 && product.getAvailableQuantity() <= 400.0 && isValidDate(product.getExpirationDate()))
 	{
-		addProduct(kgSections, storageProducts, product, countKgSection);
+		addProduct(kgSections, storageProducts, product, countKgSection, isAdd);
 		addLog(logs, systemCommand, product.getProductName(), product.getUnit(), product.getAvailableQuantity());
+		if (isAdd)
+		{
+			printMessages(1);
+		}
 	}
 	else
 	{
-		cout << endl << "This product can't add to storage!!!" << endl;
+		printErrorMessagesProduct(product.getUnit(), product.getAvailableQuantity(), product.getExpirationDate());
 	}
 }
 
@@ -78,9 +87,9 @@ void removeFunction(Section*& litreSections, Section*& kgSections, vector<Storag
 	string productName;
 	float quantity;
 	printLine();
-	cout << "Enter the product name: ";
+	printInputMessasges(1);
 	getline(cin, productName);
-	cout << "Enter the quantity you want to remove: ";
+	printInputMessasges(7);
 	cin >> quantity;
 	printLine();
 	productName = to_lower(productName);
@@ -95,17 +104,19 @@ void removeFunction(Section*& litreSections, Section*& kgSections, vector<Storag
 	}
 	else
 	{
-		cout << "\nThis product does not exist..." << endl;
+		printMessages(2);
 	}
 }
 
 void logFunction(vector<string> logs) {
 	string fDate, tDate;
 	Date fromDate, toDate;
-	cout << "From: ";
+	printLine();
+	printInputMessasges(8);
 	cin >> fDate;
-	cout << "To: ";
+	printInputMessasges(9);
 	cin >> tDate;
+	printLine();
 	fromDate = receiveDate(fDate);
 	toDate = receiveDate(tDate);
 	cout << endl;
@@ -156,7 +167,8 @@ void cleanFunction(Section*& sections, vector<Storage>& storageProducts, vector<
 	}
 	for (size_t i = 0; i < rearrangeProducts.size(); i++)
 	{
-		addProduct(sections, storageProducts, rearrangeProducts[i], count);
+		bool isAdd = true;
+		addProduct(sections, storageProducts, rearrangeProducts[i], count, isAdd);
 	}
 	if (cleanProducts.size() != 0)
 	{
@@ -175,14 +187,22 @@ void cleanFunction(Section*& sections, vector<Storage>& storageProducts, vector<
 void lossesFunction(vector<string> logs)
 {
 	float totalPrice = 0.0, priceForProduct;
-	string log, operation, productNameLogs, productName;
+	string log, operation, productNameLogs, productName, fromDate, toDate, dateLogs;
+	Date fDate, tDate, dLogs;
 	printLine();
-	cout << "Enter Product Name: ";
+	printInputMessasges(1);
 	getline(cin, productName);
 	productName = to_lower(productName);
-	cout << "Enter price per unit of measure: ";
+	printInputMessasges(10);
 	cin >> priceForProduct;
+	printInputMessasges(11);
+	printInputMessasges(8);
+	cin >> fromDate;
+	printInputMessasges(9);
+	cin >> toDate;
 	printLine();
+	fDate = receiveDate(fromDate);
+	tDate = receiveDate(toDate);
 	for (size_t i = 0; i < logs.size(); i++)
 	{
 		log = logs[i];
@@ -190,23 +210,19 @@ void lossesFunction(vector<string> logs)
 		{
 			if (i == 1)
 			{
-				int len = log.find("->");
-				operation = log.substr(0, len);
-				log = log.erase(0, len + 2);
+				operation = splitByArrow(log);
 			}
 			else if (i == 2)
 			{
-				int len = log.find("->");
-				productNameLogs = log.substr(0, len);
-				log = log.erase(0, len + 2);
+				productNameLogs = splitByArrow(log);
 			}
 			else
 			{
-				int len = log.find("->");
-				log = log.erase(0, len + 2);
+				dateLogs = splitByArrow(log);
+				dLogs = receiveDate(dateLogs);
 			}
 		}
-		if (operation == "clean" && productNameLogs == productName)
+		if (operation == "clean" && productNameLogs == productName && dLogs >= fDate && dLogs <= tDate)
 		{
 			int len = log.find("->");
 			float quantityProduct = stof(log.substr(len + 2));
@@ -220,6 +236,6 @@ void lossesFunction(vector<string> logs)
 	}
 	else
 	{
-		cout << "\nThere are no losses for this product" << endl;
+		printMessages(3);
 	}
 }

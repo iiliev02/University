@@ -208,7 +208,7 @@ void getSaveStorage(Section*& litreSections, Section*& kgSections, vector<Storag
 		}
 		else if (strcmp(getProducts[i].getUnit(), "kg") == 0)
 		{
-			addProduct(kgSections, storageProducts, getProducts[i], countKgSection);
+			addGetProduct(kgSections, storageProducts, getProducts[i], posSection, posShelf);
 		}
 	}
 }

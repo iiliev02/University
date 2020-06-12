@@ -63,21 +63,27 @@ int main() {
 					}
 					else
 					{
-						cout << "You have entered an invalid operation!!!" << endl;
+						printMessages(10);
 					}
 					program_Command.clear();
 					programCommand(program_Command);
 				}
+				delete[] litreSections;
+				delete[] kgSections;
 				save(fileName, storageProducts, logs);
 			}
 			else
 			{
-				cout << "Not successfully opened storage!" << endl;
+				printMessages(11);
 			}
 		}
 		else if (commandLine == "help")
 		{
 			help();
+		}
+		else
+		{
+			printMessages(10);
 		}
 		line.clear();
 		commandLine.clear();

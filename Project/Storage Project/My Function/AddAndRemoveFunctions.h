@@ -32,7 +32,7 @@ void removeProductFromListProducts(vector<Storage>& storageProducts, vector<Stor
 	}
 }
 
-void addProduct(Section*& sections, vector<Storage>& storageProducts, Storage& product, int& count)
+void addProduct(Section*& sections, vector<Storage>& storageProducts, Storage& product, int& count, bool& isAdd)
 {
 	float quan = product.getAvailableQuantity();
 	if (quan <= CAPACITY_QUANTITY)
@@ -195,7 +195,8 @@ void addProduct(Section*& sections, vector<Storage>& storageProducts, Storage& p
 											}
 											else
 											{
-												cout << "Sorry!!! We don't have enough space for the product..." << endl;
+												printMessages(4);
+												isAdd = false;
 											}
 										}
 									}
@@ -319,7 +320,8 @@ void addProduct(Section*& sections, vector<Storage>& storageProducts, Storage& p
 								}
 								else
 								{
-									cout << "Sorry!!! We don't have enough space for the product..." << endl;
+									printMessages(4);
+									isAdd = false;
 								}
 							}
 						}
@@ -361,7 +363,8 @@ void addProduct(Section*& sections, vector<Storage>& storageProducts, Storage& p
 				}
 				else
 				{
-					cout << "Sorry!!!We don't have enough space for the product..." << endl;
+					printMessages(4);
+					isAdd = false;
 				}
 			}
 		}
@@ -469,7 +472,8 @@ void addProduct(Section*& sections, vector<Storage>& storageProducts, Storage& p
 			}
 			else
 			{
-				cout << "Sorry!!!We don't have enough space for the product..." << endl;
+				printMessages(4);
+				isAdd = false;
 			}
 		}
 	}
@@ -564,7 +568,7 @@ void addGetProduct(Section*& sections, vector<Storage>& storageProducts, Storage
 					}
 					else
 					{
-						cout << "Sorry!!! We don't have enough space for the product..." << endl;
+						printMessages(4);
 					}
 				}
 			}
@@ -715,7 +719,7 @@ void removeProduct(Section*& sections, vector<Storage>& storageProducts, vector<
 		}
 		cout << endl;
 		printLine();
-		cout << "Do you want to continue and remove all available quantity for the product...[Yes/No]: ";
+		printInputMessasges(12);
 		cin >> yesOrNo;
 		yesOrNo = to_lower(yesOrNo);
 		if (yesOrNo == "yes")
@@ -733,7 +737,7 @@ void removeProduct(Section*& sections, vector<Storage>& storageProducts, vector<
 		}
 		else
 		{
-			cout << "Okay. Now, you can to continue with another option." << endl;
+			printMessages(5);
 		}
 	}
 }

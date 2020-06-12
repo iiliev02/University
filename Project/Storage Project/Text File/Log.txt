@@ -6,3 +6,8 @@
 2020-6-11->add->cola->litre->2.000000
 2020-6-11->add->fanta->litre->145.000000
 2020-6-11->clean->fanta->litre->145.000000
+2020-6-12->add->cola->litre->200.000000
+2020-6-12->add->sprite->litre->381.000000
+2020-6-13->add->fanta->litre->299.000000
+2020-6-13->add->jack daniels->litre->400.000000
+2020-6-13->remove->jack daniels->litre->100.000000

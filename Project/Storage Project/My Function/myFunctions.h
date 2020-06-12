@@ -14,6 +14,8 @@ using namespace std;
 int countLitreSection = 1;
 int countKgSection = 1;
 
+void printInputMessasges(int value);
+
 void printLine()
 {
 	for (size_t i = 0; i < 25; i++) cout << "-";
@@ -74,6 +76,24 @@ string splitByDash(string& line) {
 	{
 		temp = line.substr(0, len);
 		line.erase(0, len + 1);
+	}
+	return temp;
+}
+
+string splitByArrow(string& line)
+{
+	int len = 0;
+	len = line.find("->");
+	string temp = "";
+	if (len < 0)
+	{
+		temp = line.substr(0, line.size());
+		line.clear();
+	}
+	else
+	{
+		temp = line.substr(0, len);
+		line.erase(0, len + 2);
 	}
 	return temp;
 }
@@ -161,17 +181,38 @@ string receiveFileName(string line)
 
 void programCommand(string& systemCommand)
 {
-	cout << "\nChoose one of the seven options:\n 1) Print\n 2) Add\n 3) Remove\n 4) Log\n 5) Clean\n 6) Losses\n 7) Close\n\nYour choice: ";
+	const string option = "\nChoose one of the seven options:\n 1) Print\n 2) Add\n 3) Remove\n 4) Log\n 5) Clean\n 6) Losses\n 7) Close\n\nYour choice: ";
+	cout << option;
 	cin >> systemCommand;
 	systemCommand = to_lower(systemCommand);
 }
 
 void systemCommand(string& commandLine, string& line)
 {
-	cout << "\n ----- Menu ▼ -----\n • Open <File Path>\n • Help\n • Exit\n\nYour choice: ";
+	const string menu = "\n ----- Menu ▼ -----\n • Open <File Path>\n • Help\n • Exit\n\nYour choice: ";
+	cout << menu;
 	getline(cin, line);
 	commandLine = splitBySpace(line);
 	commandLine = to_lower(commandLine);
+}
+
+void saveOrNoCommand(string& saveOrNo)
+{
+	const string yesOrNo = "Do you want to save: [Yes / No] ";
+	printLine();
+	cout << yesOrNo;
+	cin >> saveOrNo;
+	printLine();
+	saveOrNo = to_lower(saveOrNo);
+}
+
+void saveOrSaveAsCommand(string& saveOrSaveAs, string& command)
+{
+	const string saveMenu = "\nChoose one of the two options:\n 1) Save\n 2) SaveAs <File Path>\n\nYour choice: ";
+	cout << saveMenu;
+	getline(cin, saveOrSaveAs);
+	command = splitBySpace(saveOrSaveAs);
+	command = to_lower(command);
 }
 
 Date receiveToday()
@@ -200,19 +241,20 @@ Storage addInfoProduct()
 	Date expirationDate, entranceDate;
 	Location loc = Location(0, "0", "0");
 	entranceDate = Date(currentDay(), currentMonth(), currentYear());
-	cout << "\nЕnter the product name: ";
+	cout << endl;
+	printInputMessasges(1);
 	cin.ignore();
 	getline(cin, productName);
-	cout << "Enter the expiration date: ";
+	printInputMessasges(2);
 	cin >> expirDate;
-	cout << "Enter the producer: ";
+	printInputMessasges(3);
 	cin.ignore();
 	getline(cin, producer);
-	cout << "Enter the unit: (kg, litre) ";
+	printInputMessasges(4);
 	cin >> unit;
-	cout << "Enter the available quantity: ";
+	printInputMessasges(5);
 	cin >> availableQuantity;
-	cout << "Enter the comment of product: ";
+	printInputMessasges(6);
 	cin.ignore();
 	getline(cin, comment);
 	expirationDate = receiveDate(expirDate);
@@ -395,5 +437,160 @@ bool openFile(string fileName)
 			createFile.close();
 		}
 		return isOpen;
+	}
+}
+
+void printErrorMessagesProduct(const char* unit, float quantity, Date validDate)
+{
+	const string invalidUnit = "\nYou entered invalid unit...";
+	const string invalidQuantity = "\nQuantity of the product is more than maximum allowed for one product...";
+	const string invalidExpirDate = "\nExpiration date of the product is invalid or has expired...";
+	bool unitCorrect = strcmp(unit, "litre") == 0 || strcmp(unit, "kg") == 0;
+	bool quantityCorrect = quantity <= 400.0;
+	bool validExpirDate = isValidDate(validDate);
+	if (!unitCorrect && quantityCorrect && validExpirDate)
+	{
+		cout << invalidUnit << endl;
+	}
+	else if (unitCorrect && !quantityCorrect && validExpirDate)
+	{
+		cout << invalidQuantity << endl;
+	}
+	else if (unitCorrect && quantityCorrect && !validExpirDate)
+	{
+		cout << invalidExpirDate << endl;
+	}
+}
+
+void printMessages(int value)
+{
+	const string sucAddProd = "\nSuccessful added product";
+	const string doesntExistProd = "\nThis product does not exist...";
+	const string noLosses = "\nThere are no losses for this product";
+	const string noSpace = "\nSorry!!! We don't have enough space for the product...";
+	const string canContinue = "\nOkay. Now, you can to continue with another option.";
+	const string emptyPath = "You must enter a file path!";
+	const string wrongSave = "Invalid operation. Only Save or SaveAs...";
+	const string noChange = "\nThe changes will not be saved!";
+	const string wrongYesOrNo = "Invalid operation. Only Yes or No...";
+	const string invalidOperation = "\nYou have entered an invalid operation!!!";
+	const string notSucOpen = "Not successfully opened storage!";
+	switch (value)
+	{
+	case 1:
+		cout << sucAddProd << endl;
+		break;
+
+	case 2:
+		cout << doesntExistProd << endl;
+		break;
+
+	case 3:
+		cout << noLosses << endl;
+		break;
+
+	case 4:
+		cout << noSpace << endl;
+		break;
+
+	case 5:
+		cout << canContinue << endl;
+		break;
+
+	case 6:
+		cout << emptyPath << endl;
+		break;
+
+	case 7:
+		cout << wrongSave << endl;
+		break;
+
+	case 8:
+		cout << noChange << endl;
+		break;
+
+	case 9:
+		cout << wrongYesOrNo << endl;
+		break;
+
+	case 10:
+		cout << invalidOperation << endl;
+		break;
+
+	case 11:
+		cout << notSucOpen << endl;
+		break;
+
+	default:
+		break;
+	}
+}
+
+void printInputMessasges(int value)
+{
+	const string productName = "Еnter the product name: ";
+	const string expirDate = "Enter the expiration date: ";
+	const string producer = "Enter the producer: ";
+	const string unit = "Enter the unit: (kg, litre) ";
+	const string availableQuantity = "Enter the available quantity: ";
+	const string comment = "Enter the comment of product: ";
+	const string quantityRemove = "Enter the quantity you want to remove: ";
+	const string from = "From: ";
+	const string to = "To:";
+	const string pricePerUnit = "Enter price per unit of measure: ";
+	const string lossesForProduct = "\nEnter a period for calculate losses for the product: ";
+	const string youWantToRemove = "Do you want to continue and remove all available quantity for the product...[Yes/No]: ";
+	switch (value)
+	{
+	case 1:
+		cout << productName;
+		break;
+		
+	case 2:
+		cout << expirDate;
+		break;
+
+	case 3:
+		cout << producer;
+		break;
+
+	case 4:
+		cout << unit;
+		break;
+
+	case 5:
+		cout << availableQuantity;
+		break;
+
+	case 6:
+		cout << comment;
+		break;
+
+	case 7:
+		cout << quantityRemove;
+		break;
+
+	case 8:
+		cout << from;
+		break;
+
+	case 9:
+		cout << to;
+		break;
+
+	case 10:
+		cout << pricePerUnit;
+		break;
+
+	case 11:
+		cout << lossesForProduct << endl;
+		break;
+
+	case 12:
+		cout << youWantToRemove;
+		break;
+
+	default:
+		break;
 	}
 }
