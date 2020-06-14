@@ -50,12 +50,19 @@ void save(string fileName, vector<Storage> storageProducts, vector<string> logs)
 				}
 				else if (command == "saveas")
 				{
-					isSave = true;
 					string anotherFileName = receiveFileName(saveOrSaveAs);
-					saveStorage(storageProducts, anotherFileName);
-					saveLog(logs);
-					saveCountSections(countLitreSection, countKgSection);
-					cout << "Successfully saved " << anotherFileName << endl;
+					if (anotherFileName != " ")
+					{
+						isSave = true;
+						saveStorage(storageProducts, anotherFileName);
+						saveLog(logs);
+						saveCountSections(countLitreSection, countKgSection);
+						cout << "Successfully saved " << anotherFileName << endl;
+					}
+					else
+					{
+						printMessages(6);
+					}
 				}
 				else
 				{

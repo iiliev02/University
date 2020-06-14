@@ -536,7 +536,7 @@ void printInputMessasges(int value)
 	const string comment = "Enter the comment of product: ";
 	const string quantityRemove = "Enter the quantity you want to remove: ";
 	const string from = "From: ";
-	const string to = "To:";
+	const string to = "To: ";
 	const string pricePerUnit = "Enter price per unit of measure: ";
 	const string lossesForProduct = "\nEnter a period for calculate losses for the product: ";
 	const string youWantToRemove = "Do you want to continue and remove all available quantity for the product...[Yes/No]: ";
