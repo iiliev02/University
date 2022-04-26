@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><accesses version="1.0">
+    <movie>
+        <name>Спайдърмен: Няма път към дома</name>
+        <genre>Фантастика</genre>
+        <duration>150 минути</duration>
+        <projections>15:00, 16:30, 20:15</projections>
+    </movie>
+    <movie>
+        <name>Дюн</name>
+        <genre>Фантастика</genre>
+        <duration>155 минути</duration>
+        <projections>16:30</projections>
+    </movie>
+</accesses>

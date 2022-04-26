@@ -1,0 +1,1 @@
+Cinema: Кино Арена - ВарнаCity: ВарнаAddress: ул. Акад. Андрей СахаровТhe following staff work:NAME | JOB | EMAIL | SALARYВасо Евлогиев | Администратор | VasoGechev@abv.bg | 1800Карина Цецкова | Разпоредител | Karina_Snejanova@gmail.bg | 1300Сийка Теодославова | Касиер | SijkaValentinova@yahoo.bg | 1150Мариела Янова | КафеСлужител | MarielaRozalinova@abv.bg | 1150

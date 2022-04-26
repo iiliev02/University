@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT cinema (cinemaName, contacts, staff, movies, food) >
+<!ELEMENT cinemaName (#PCDATA) >
+<!ELEMENT contacts (country, city, street, email, phone) >
+<!ELEMENT country (#PCDATA) >
+<!ELEMENT city (#PCDATA) >
+<!ELEMENT street (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT phone (#PCDATA) >
+<!ELEMENT staff (employee+) >
+<!ELEMENT employee (employeeName, employeeEmail, employeePhone, salary) >
+<!ATTLIST employee id CDATA #REQUIRED >
+<!ATTLIST employee job (Администратор|Разпоредител|Касиер|КафеСлужител) #REQUIRED >
+<!ATTLIST employee gender (Мъж|Жена) #REQUIRED >
+<!ELEMENT employeeName (#PCDATA) >
+<!ELEMENT employeeEmail (#PCDATA) >
+<!ELEMENT employeePhone (#PCDATA) >
+<!ELEMENT salary (#PCDATA) >
+<!ATTLIST salary currency CDATA #REQUIRED >
+<!ELEMENT movies (movie+) >
+<!ELEMENT movie (movieName, actors, movieDescription, duration, projections, hall, ticket) >
+<!ATTLIST movie genre CDATA #REQUIRED >
+<!ATTLIST movie category (2Д|3Д) #REQUIRED >
+<!ELEMENT movieName (#PCDATA) >
+<!ELEMENT actors (#PCDATA) >
+<!ELEMENT movieDescription (#PCDATA) >
+<!ELEMENT duration (#PCDATA) >
+<!ELEMENT projections (#PCDATA) >
+<!ELEMENT hall (#PCDATA) >
+<!ELEMENT ticket (#PCDATA) >
+<!ATTLIST ticket currency CDATA #REQUIRED >
+<!ELEMENT food (offer+) >
+<!ELEMENT offer (productName, quantity, price) >
+<!ATTLIST offer type (Храна|Напитка) #REQUIRED >
+<!ELEMENT productName (#PCDATA) >
+<!ELEMENT quantity (#PCDATA) >
+<!ELEMENT price (#PCDATA) >
+<!ATTLIST price currency CDATA #REQUIRED >
