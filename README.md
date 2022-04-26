@@ -1,2 +1,2 @@
-# Univercity
-Univercity - Tasks and Projects
+# University
+University - Tasks and Projects
