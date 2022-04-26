@@ -1,0 +1,11 @@
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\bin\Debug\GeometryTest.exe.config
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\bin\Debug\GeometryTest.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\bin\Debug\GeometryTest.pdb
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\bin\Debug\Geometry.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\bin\Debug\Geometry.pdb
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\bin\Debug\Geometry.exe.config
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\obj\Debug\GeometryTest.csproj.AssemblyReference.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\obj\Debug\GeometryTest.csproj.CoreCompileInputs.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\obj\Debug\GeometryTest.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\obj\Debug\GeometryTest.pdb
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\GeometryTest\obj\Debug\GeometryTest.csproj.CopyComplete

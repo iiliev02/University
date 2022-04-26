@@ -1,0 +1,7 @@
+D:\Download\Homeworks\HomeworkSeven\Task01\bin\Debug\Task01.exe.config
+D:\Download\Homeworks\HomeworkSeven\Task01\bin\Debug\Task01.exe
+D:\Download\Homeworks\HomeworkSeven\Task01\bin\Debug\Task01.pdb
+D:\Download\Homeworks\HomeworkSeven\Task01\obj\Debug\Task01.csproj.AssemblyReference.cache
+D:\Download\Homeworks\HomeworkSeven\Task01\obj\Debug\Task01.csproj.CoreCompileInputs.cache
+D:\Download\Homeworks\HomeworkSeven\Task01\obj\Debug\Task01.exe
+D:\Download\Homeworks\HomeworkSeven\Task01\obj\Debug\Task01.pdb

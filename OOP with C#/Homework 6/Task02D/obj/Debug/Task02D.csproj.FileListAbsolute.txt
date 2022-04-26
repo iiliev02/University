@@ -1,0 +1,6 @@
+D:\Download\Homeworks\HomeworkSix\Task02D\bin\Debug\Task02D.exe.config
+D:\Download\Homeworks\HomeworkSix\Task02D\bin\Debug\Task02D.exe
+D:\Download\Homeworks\HomeworkSix\Task02D\bin\Debug\Task02D.pdb
+D:\Download\Homeworks\HomeworkSix\Task02D\obj\Debug\Task02D.csproj.CoreCompileInputs.cache
+D:\Download\Homeworks\HomeworkSix\Task02D\obj\Debug\Task02D.exe
+D:\Download\Homeworks\HomeworkSix\Task02D\obj\Debug\Task02D.pdb

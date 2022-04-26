@@ -1,0 +1,15 @@
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\bin\Debug\CommandReverse.exe
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\bin\Debug\CommandReverse.pdb
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\CommandReverse.csproj.AssemblyReference.cache
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\Window1.baml
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\Window1.g.cs
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\App.g.cs
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\CommandReverse_MarkupCompile.cache
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\CommandReverse.g.resources
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\CommandReverse.Properties.Resources.resources
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\CommandReverse.csproj.GenerateResource.cache
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\CommandReverse.csproj.CoreCompileInputs.cache
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\CommandReverse.exe
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\CommandReverse.pdb
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Phantom\source\repos\C#Uni\CommandReverse\CommandReverse\obj\Debug\CommandReverse_MarkupCompile.lref

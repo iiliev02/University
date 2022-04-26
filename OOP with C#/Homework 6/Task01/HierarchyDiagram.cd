@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProblemOne.TextBox">
+    <Position X="4.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAECAAAAAAAAAAAAAAAAAABAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>TextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemOne.TestPolymorphismProtected">
+    <Position X="10.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>TestPolymorphismProtected.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemOne.EditTextBox">
+    <Position X="1.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAABAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>EditTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemOne.MultiLineTextBox">
+    <Position X="10.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAABAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>MultiLineTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProblemOne.RichTextBox">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAABAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>RichTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

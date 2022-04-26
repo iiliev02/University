@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="CashRegisterUserControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CashRegisterUserControl"
+        mc:Ignorable="d"
+        Height="350" Width="300">
+
+    <UserControl.Resources>
+        <Style TargetType="StackPanel">
+            <Setter Property="Width" Value="272"></Setter>
+            <Setter Property="Height" Value="26"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="VerticalAlignment" Value="Top"></Setter>
+            <Setter Property="Orientation" Value="Horizontal"></Setter>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="142"></Setter>
+            <Setter Property="Height" Value="20"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Background" Value="#FFEFF0F1"></Setter>
+            <Setter Property="FlowDirection" Value="RightToLeft"></Setter>
+            <Setter Property="Margin" Value="0,3"></Setter>
+            <Setter  Property="IsReadOnly" Value="True"></Setter>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="26"/>
+            <Setter Property="Width" Value="38"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5" />
+                </Style>
+            </Style.Resources>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="10,10,0,0" Grid.Row="0">
+            <Label Content="$" />
+            <TextBox Name="txtEntry" Width="254"/>
+        </StackPanel>
+        <Grid HorizontalAlignment="Left" Height="128" Margin="10,53,0,0" VerticalAlignment="Top" Width="131" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Click="DigitButton_OnClick" Content="1" Grid.Column="0" Grid.Row="0"/>
+            <Button Click="DigitButton_OnClick" Content="2" Grid.Column="1" Grid.Row="0"/>
+            <Button Click="DigitButton_OnClick" Content="3" Grid.Column="2" Grid.Row="0"/>
+            <Button Click="DigitButton_OnClick" Content="4" Grid.Column="0" Grid.Row="1"/>
+            <Button Click="DigitButton_OnClick" Content="5" Grid.Column="1" Grid.Row="1"/>
+            <Button Click="DigitButton_OnClick" Content="6" Grid.Column="2" Grid.Row="1"/>
+            <Button Click="DigitButton_OnClick" Content="7" Grid.Column="0" Grid.Row="2"/>
+            <Button Click="DigitButton_OnClick" Content="8" Grid.Column="1" Grid.Row="2"/>
+            <Button Click="DigitButton_OnClick" Content="9" Grid.Column="2" Grid.Row="2"/>
+            <Button Click="DigitButton_OnClick" Content="0" Grid.Column="1" Grid.Row="3"/>
+            <Button Click="PointButton_OnClick" Content="." Grid.Column="2" Grid.Row="3"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="128" Margin="181,53,0,0" VerticalAlignment="Top" Width="101" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Click="EnterButton_OnClick" Content="Enter" Width="100" Grid.Row="0"/>
+            <Button Click="TotalButton_OnClick" Content="Total" Width="100" Grid.Row="1"/>
+            <Button Click="DeleteButton_OnClick" Content="Delete" Width="100" Grid.Row="2"/>
+            <Button Click="ClearButton_OnClick" Content="Clear" Width="100" Grid.Row="3"/>
+        </Grid>
+        <StackPanel Margin="10,14,0,0" Grid.Row="1">
+            <Label Content="Subtotal: "/>
+            <Label Content="$" Margin="52,0,0,0"/>
+            <TextBox Name="txtSubtotal"/>
+        </StackPanel>
+        <StackPanel Margin="10,45,0,0" Grid.Row="1">
+            <Label Content="Tax: "/>
+            <Label Content="$" Margin="80,0,0,0"/>
+            <TextBox Name="txtTax"/>
+        </StackPanel>
+        <StackPanel Margin="10,76,0,0" Grid.Row="1">
+            <Label Content="Total: "/>
+            <Label Content="$" Margin="71,0,0,0"/>
+            <TextBox Name="txtTotal"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

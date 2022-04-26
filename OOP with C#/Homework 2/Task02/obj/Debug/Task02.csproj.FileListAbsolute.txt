@@ -1,0 +1,13 @@
+D:\Download\Homeworks\HomeworkTwo\ProblemTwo\bin\Debug\ProblemTwo.exe.config
+D:\Download\Homeworks\HomeworkTwo\ProblemTwo\bin\Debug\ProblemTwo.exe
+D:\Download\Homeworks\HomeworkTwo\ProblemTwo\bin\Debug\ProblemTwo.pdb
+D:\Download\Homeworks\HomeworkTwo\ProblemTwo\obj\Debug\Task02.csproj.CoreCompileInputs.cache
+D:\Download\Homeworks\HomeworkTwo\ProblemTwo\obj\Debug\ProblemTwo.exe
+D:\Download\Homeworks\HomeworkTwo\ProblemTwo\obj\Debug\ProblemTwo.pdb
+D:\Download\Homeworks\HomeworkTwo\Task02\bin\Debug\Task02.exe.config
+D:\Download\Homeworks\HomeworkTwo\Task02\bin\Debug\Task02.exe
+D:\Download\Homeworks\HomeworkTwo\Task02\bin\Debug\Task02.pdb
+D:\Download\Homeworks\HomeworkTwo\Task02\obj\Debug\Task02.csproj.AssemblyReference.cache
+D:\Download\Homeworks\HomeworkTwo\Task02\obj\Debug\Task02.csproj.CoreCompileInputs.cache
+D:\Download\Homeworks\HomeworkTwo\Task02\obj\Debug\Task02.exe
+D:\Download\Homeworks\HomeworkTwo\Task02\obj\Debug\Task02.pdb

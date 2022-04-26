@@ -1,0 +1,7 @@
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemOne\bin\Debug\ProblemOne.exe.config
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemOne\bin\Debug\ProblemOne.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemOne\bin\Debug\ProblemOne.pdb
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemOne\obj\Debug\ProblemOne.csproj.AssemblyReference.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemOne\obj\Debug\ProblemOne.csproj.CoreCompileInputs.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemOne\obj\Debug\ProblemOne.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemOne\obj\Debug\ProblemOne.pdb

@@ -1,0 +1,7 @@
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoC\bin\Debug\ProblemTwoC.exe.config
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoC\bin\Debug\ProblemTwoC.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoC\bin\Debug\ProblemTwoC.pdb
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoC\obj\Debug\ProblemTwoC.csproj.AssemblyReference.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoC\obj\Debug\ProblemTwoC.csproj.CoreCompileInputs.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoC\obj\Debug\ProblemTwoC.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoC\obj\Debug\ProblemTwoC.pdb

@@ -1,0 +1,6 @@
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoD\bin\Debug\ProblemTwoD.exe.config
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoD\bin\Debug\ProblemTwoD.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoD\bin\Debug\ProblemTwoD.pdb
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoD\obj\Debug\ProblemTwoD.csproj.CoreCompileInputs.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoD\obj\Debug\ProblemTwoD.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkSix\ProblemTwoD\obj\Debug\ProblemTwoD.pdb

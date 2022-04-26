@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="CalculatorUserControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorUserControl"
+        mc:Ignorable="d"
+        Height="420" Width="520"
+        TextInput="OnWindowKeyDown">
+
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="58"/>
+            <Setter Property="Width" Value="76"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5" />
+                </Style>
+            </Style.Resources>
+        </Style>
+    </UserControl.Resources>
+
+    <StackPanel Height="350" Width="472" Margin="10">
+        <TextBox Name="txtEntry" Height="26" TextWrapping="Wrap" Text="0" VerticalContentAlignment="Center" Background="#FFF3F3F3" Margin="10,0" IsReadOnly="True"/>
+        <Grid Height="300" Margin="2,23,2,0" Width="468">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Click="OperationButton_OnClick" Content="CE" Grid.Row="0" Grid.Column="4" Background="Darkgray" ToolTip="Clear Current Entry"/>
+            <Button Click="OperationButton_OnClick" Content="C" Grid.Row="0" Grid.Column="5" Background="Darkgray" ToolTip="Clear All"/>
+
+            <Button Click="DigitButton_OnClick" Content="1" Grid.Row="1" Grid.Column="1"/>
+            <Button Click="DigitButton_OnClick" Content="2" Grid.Row="1" Grid.Column="2"/>
+            <Button Click="DigitButton_OnClick" Content="3" Grid.Row="1" Grid.Column="3"/>
+            <Button Click="DigitButton_OnClick" Content="4" Grid.Row="2" Grid.Column="1"/>
+            <Button Click="DigitButton_OnClick" Content="5" Grid.Row="2" Grid.Column="2"/>
+            <Button Click="DigitButton_OnClick" Content="6" Grid.Row="2" Grid.Column="3"/>
+            <Button Click="DigitButton_OnClick" Content="7" Grid.Row="3" Grid.Column="1"/>
+            <Button Click="DigitButton_OnClick" Content="8" Grid.Row="3" Grid.Column="2"/>
+            <Button Click="DigitButton_OnClick" Content="9" Grid.Row="3" Grid.Column="3"/>
+            <Button Click="DigitButton_OnClick" Content="." Grid.Row="4" Grid.Column="1"/>
+            <Button Click="DigitButton_OnClick" Content="0" Grid.Row="4" Grid.Column="2"/>
+
+            <Button Click="OperationButton_OnClick" Content="+/-" Grid.Row="4" Grid.Column="3"/>
+
+            <Button Click="OperationButton_OnClick" Content="M" Grid.Row="1" Grid.Column="0" Background="Darkgray" ToolTip="Store in Memory"/>
+            <Button Click="OperationButton_OnClick" Content="M+" Grid.Row="2" Grid.Column="0" Background="Darkgray" ToolTip="Add To Memory"/>
+            <Button Click="OperationButton_OnClick" Content="M-" Grid.Row="3" Grid.Column="0" Background="Darkgray" ToolTip="Subtract from Memory"/>
+            <Button Click="OperationButton_OnClick" Content="MC" Grid.Row="4" Grid.Column="0" Background="Darkgray" ToolTip="Clear Memory"/>
+
+            <Button Click="OperationButton_OnClick" Content="/" Grid.Row="1" Grid.Column="4" Background="Darkgray"/>
+            <Button Click="OperationButton_OnClick" Content="x" Grid.Row="2" Grid.Column="4" Background="Darkgray"/>
+            <Button Click="OperationButton_OnClick" Content="-" Grid.Row="3" Grid.Column="4" Background="Darkgray"/>
+            <Button Click="OperationButton_OnClick" Content="+" Grid.Row="4" Grid.Column="4" Background="Darkgray"/>
+            <Button Click="OperationButton_OnClick" Content="Sqrt" Grid.Row="1" Grid.Column="5" Background="Darkgray" ToolTip="Usage: 'A Sqrt = Sqrt(A)'"/>
+            <Button Click="OperationButton_OnClick" Content="^" Grid.Row="2" Grid.Column="5" Background="Darkgray" ToolTip="Usage: 'A ^ B'"/>
+            <Button Click="OperationButton_OnClick" Content="1/X" Grid.Row="3" Grid.Column="5" Background="Darkgray" ToolTip="Usage: 'A 1/X = A/X'"/>
+            <Button Click="OperationButton_OnClick" Content="=" Grid.Row="4" Grid.Column="5" Background="#FFF1974C"/>
+            <TextBlock Name="txtMemory" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="2" Text="Memory: [empty]" VerticalAlignment="Top" Margin="10,5,0,0"/>
+        </Grid>
+    </StackPanel>
+</UserControl>

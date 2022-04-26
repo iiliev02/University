@@ -1,0 +1,7 @@
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\Geometry\bin\Debug\Geometry.exe.config
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\Geometry\bin\Debug\Geometry.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\Geometry\bin\Debug\Geometry.pdb
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\Geometry\obj\Debug\Geometry.csproj.AssemblyReference.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\Geometry\obj\Debug\Geometry.csproj.CoreCompileInputs.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\Geometry\obj\Debug\Geometry.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkFive\Geometry\obj\Debug\Geometry.pdb

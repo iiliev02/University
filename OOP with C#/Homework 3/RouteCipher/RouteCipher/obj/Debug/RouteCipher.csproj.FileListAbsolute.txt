@@ -1,0 +1,7 @@
+C:\Users\Phantom\source\repos\C#Uni\RouteCipher\RouteCipher\bin\Debug\RouteCipher.exe.config
+C:\Users\Phantom\source\repos\C#Uni\RouteCipher\RouteCipher\bin\Debug\RouteCipher.exe
+C:\Users\Phantom\source\repos\C#Uni\RouteCipher\RouteCipher\bin\Debug\RouteCipher.pdb
+C:\Users\Phantom\source\repos\C#Uni\RouteCipher\RouteCipher\obj\Debug\RouteCipher.csproj.AssemblyReference.cache
+C:\Users\Phantom\source\repos\C#Uni\RouteCipher\RouteCipher\obj\Debug\RouteCipher.csproj.CoreCompileInputs.cache
+C:\Users\Phantom\source\repos\C#Uni\RouteCipher\RouteCipher\obj\Debug\RouteCipher.exe
+C:\Users\Phantom\source\repos\C#Uni\RouteCipher\RouteCipher\obj\Debug\RouteCipher.pdb

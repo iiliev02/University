@@ -1,0 +1,14 @@
+C:\Users\Phantom\source\repos\C#Uni\HomeworkOne\HomeworkOne\bin\Debug\HomeworkOne.exe.config
+C:\Users\Phantom\source\repos\C#Uni\HomeworkOne\HomeworkOne\bin\Debug\HomeworkOne.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkOne\HomeworkOne\bin\Debug\HomeworkOne.pdb
+C:\Users\Phantom\source\repos\C#Uni\HomeworkOne\HomeworkOne\obj\Debug\HomeworkOne.csproj.AssemblyReference.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkOne\HomeworkOne\obj\Debug\HomeworkOne.csproj.CoreCompileInputs.cache
+C:\Users\Phantom\source\repos\C#Uni\HomeworkOne\HomeworkOne\obj\Debug\HomeworkOne.exe
+C:\Users\Phantom\source\repos\C#Uni\HomeworkOne\HomeworkOne\obj\Debug\HomeworkOne.pdb
+D:\Download\Homeworks\Homework One\HomeworkOne\bin\Debug\HomeworkOne.exe.config
+D:\Download\Homeworks\Homework One\HomeworkOne\bin\Debug\HomeworkOne.exe
+D:\Download\Homeworks\Homework One\HomeworkOne\bin\Debug\HomeworkOne.pdb
+D:\Download\Homeworks\Homework One\HomeworkOne\obj\Debug\HomeworkOne.csproj.AssemblyReference.cache
+D:\Download\Homeworks\Homework One\HomeworkOne\obj\Debug\HomeworkOne.csproj.CoreCompileInputs.cache
+D:\Download\Homeworks\Homework One\HomeworkOne\obj\Debug\HomeworkOne.exe
+D:\Download\Homeworks\Homework One\HomeworkOne\obj\Debug\HomeworkOne.pdb

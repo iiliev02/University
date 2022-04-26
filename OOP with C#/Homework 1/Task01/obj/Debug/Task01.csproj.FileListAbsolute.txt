@@ -1,0 +1,7 @@
+D:\Download\Homeworks\Homework One\HomeworkOne\bin\Debug\HomeworkOne.exe.config
+D:\Download\Homeworks\Homework One\HomeworkOne\bin\Debug\HomeworkOne.exe
+D:\Download\Homeworks\Homework One\HomeworkOne\bin\Debug\HomeworkOne.pdb
+D:\Download\Homeworks\Homework One\HomeworkOne\obj\Debug\Task01.csproj.AssemblyReference.cache
+D:\Download\Homeworks\Homework One\HomeworkOne\obj\Debug\Task01.csproj.CoreCompileInputs.cache
+D:\Download\Homeworks\Homework One\HomeworkOne\obj\Debug\HomeworkOne.exe
+D:\Download\Homeworks\Homework One\HomeworkOne\obj\Debug\HomeworkOne.pdb
