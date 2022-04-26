@@ -1,0 +1,56 @@
+Product Name: cola
+Expiration Date: 2020-7-12
+Entrance Date: 2020-6-11
+Producer: cola
+Unit: litre
+Available Quantity: 200
+Location: 1 - [1] - [1-4]
+Comment: drink
+Product Name: cola
+Expiration Date: 2020-8-10
+Entrance Date: 2020-6-11
+Producer: cola
+Unit: litre
+Available Quantity: 66
+Location: 1 - [2] - [5-6]
+Comment: drink
+Product Name: sprite
+Expiration Date: 2020-12-20
+Entrance Date: 2020-6-12
+Producer: cola
+Unit: litre
+Available Quantity: 381
+Location: 1 - [3-4] - [1-8]
+Comment: drink
+Product Name: fanta
+Expiration Date: 2020-8-22
+Entrance Date: 2020-6-13
+Producer: cola
+Unit: litre
+Available Quantity: 299
+Location: 1 - [5-6] - [1-6]
+Comment: drink
+Product Name: jack daniels
+Expiration Date: 2021-12-12
+Entrance Date: 2020-6-13
+Producer: usa
+Unit: litre
+Available Quantity: 300
+Location: 2 - [1-2] - [1-6]
+Comment: whiskey
+Product Name: pepsi
+Expiration Date: 2021-10-10
+Entrance Date: 2020-6-14
+Producer: pepsi
+Unit: litre
+Available Quantity: 242
+Location: 2 - [3-4] - [1-5]
+Comment: drink
+Product Name: tomatoes
+Expiration Date: 2020-12-21
+Entrance Date: 2020-6-14
+Producer: bulgaria
+Unit: kg
+Available Quantity: 200
+Location: 1 - [1] - [1-4]
+Comment: vegetables

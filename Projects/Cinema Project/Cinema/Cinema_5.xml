@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cinema SYSTEM "Cinema.dtd">
+<cinema>
+    <cinemaName>Кино Арена - София</cinemaName>
+    <contacts>
+        <country>България</country>
+        <city>София</city>
+        <street>бул. Цариградско шосе 115</street>
+        <email>kino_sofia@kinoarena.bg</email>
+        <phone>02 4047 121</phone>
+    </contacts>
+    <staff>
+        <employee id="1" job="Администратор" gender="Мъж">
+            <employeeName>Мартиниян Хитков</employeeName>
+            <employeeEmail>MartiniqnPachev@abv.bg</employeeEmail>
+            <employeePhone>0888 404 769</employeePhone>
+            <salary currency="BGN">2000</salary>
+        </employee>
+        <employee id="2" job="Разпоредител" gender="Мъж">
+            <employeeName>Траян Демиров</employeeName>
+            <employeeEmail>TraqnGalinov@gmail.bg</employeeEmail>
+            <employeePhone>0887 446 196</employeePhone>
+            <salary currency="BGN">1600</salary>
+        </employee>
+        <employee id="3" job="Касиер" gender="Жена">
+            <employeeName>Аурора Руменова</employeeName>
+            <employeeEmail>AuroraNonkova@yahoo.bg</employeeEmail>
+            <employeePhone>0887 960 735</employeePhone>
+            <salary currency="BGN">1300</salary>
+        </employee>
+        <employee id="4" job="КафеСлужител" gender="Жена">
+            <employeeName>Цеца Манолова</employeeName>
+            <employeeEmail>CecaKycieva@abv.bg</employeeEmail>
+            <employeePhone>0887 534 083</employeePhone>
+            <salary currency="BGN">1300</salary>
+        </employee>
+    </staff>
+    <movies>
+        <movie genre="Фантастика" category="3Д">
+            <movieName>Спайдърмен: Няма път към дома</movieName>
+            <actors>
+                Зендая, Том Холанд, Бенедикт Къмбърбач, Мариса Томей, Джейми Фокс, Ангури Райс
+            </actors>
+            <movieDescription>
+                Питър Паркър е свалил маската и вече не може да раздели нормалния си живот от този на супергерой.
+                Когато моли за помощ Доктор Стрейндж, залогът става още по-опасен.
+                Питър ще разбере какво наистина означава да си Спайдърмен.
+            </movieDescription>
+            <duration>150 минути</duration>
+            <projections>15:00, 16:30, 20:15</projections>
+            <hall>2</hall>
+            <ticket currency="BGN">11</ticket>
+        </movie>
+        <movie genre="Фантастика" category="3Д">
+            <movieName>Дюн</movieName>
+            <actors>
+                Тимъти Шаламe, Оскар Айзък, Ребека Фъргюсън, Зендея, Джейсън Момоа, Стелан Скарсгард, Дейв Батиста, Хавиер Бардем, Джош Бролин
+            </actors>
+            <movieDescription>
+                Потомък на благородната династия Атреиди търси възмездие за смъртта на баща си,
+                като в същото време е призван да защитава планетата на подправките Аракис, известна още като Дюн.
+                Именно там се намира най-ценният ресурс, който може да отключи страховития потенциалн на човечеството.
+                Но само тези, които могат да преборят най-големите си страхове, ще оцелеят.
+            </movieDescription>
+            <duration>155 минути</duration>
+            <projections>16:30</projections>
+            <hall>1</hall>
+            <ticket currency="BGN">10</ticket>
+        </movie>
+        <movie genre="Екшън" category="2Д">
+            <movieName>Матрицата: Възкресение</movieName>
+            <actors>
+                Киану Рийвс, Приянка Чопра, Джейда Пинкет Смит, Джонатан Гроф, Джесика Хенуик,
+                Яхия Абдул-Матийн ІІ, Кари-Ан Мос
+            </actors>
+            <movieDescription>
+                Продължение на историята обединява кинематографичните икони Neo And Trinity,
+                докато се впускат обратно в Матрицата и още по -дълбоко в заешката дупка.
+                Съкрушително ново приключение с екшън и епичен мащаб, то е разположено в познат,
+                но още по-провокативен свят, където реалността е по-субективна от всякога.
+                Всичко, което е необходимо, за да се види истината, е да освободите ума си.
+            </movieDescription>
+            <duration>155 минути</duration>
+            <projections>13:15, 18:15, 21:15</projections>
+            <hall>3</hall>
+            <ticket currency="BGN">9</ticket>
+        </movie>
+        <movie genre="Мистерии" category="2Д">
+            <movieName>Улицата на кошмарите</movieName>
+            <actors>Брадли Купър, Кейт Бланшет, Руни Мара и Тони Колет</actors>
+            <movieDescription>
+                Улицата на кошмарите е адаптация на едноименния роман на Уилям Линдзи Грешам от 1946 година
+                и разказва за Стантън Карлайл (Брадли Купър) – бивш карнавален работник,
+                който се превръща в една от топ атракциите в нощните клубове на големия град.
+                Чрез различни трикове, които заимства от своята колежка Моли (Тони Колет),
+                както и с помощта на приятелката си Зийна (Руни Мара), Стантън създава впечатлението,
+                че е могъщ медиум, способен да чете умовете на хората. Първоначално идеята е просто да
+                впечатлява и забавлява тълпата на карнавала, но стремежът към слава и богатство става
+                причина представлението да  се превърне в средство за финансови измами,
+                чиято цел са по-заможните жители на града. Така Стантън попада в полезрението на
+                психиатъра д-р Лилит Ритър (Кейт Бланшет), която се опитва да
+                го изобличи като шарлатанин, но впоследствие става част от схемите му.
+            </movieDescription>
+            <duration>150 минути</duration>
+            <projections>13:30, 16:00, 19:45, 21:30</projections>
+            <hall>4</hall>
+            <ticket currency="BGN">10</ticket>
+        </movie>
+    </movies>
+    <food>
+        <offer type="Храна">
+            <productName>Пуканки</productName>
+            <quantity>Средни</quantity>
+            <price currency="BGN">6.99</price>
+        </offer>
+        <offer type="Храна">
+            <productName>Пуканки</productName>
+            <quantity>Големи</quantity>
+            <price currency="BGN">8.99</price>
+        </offer>
+        <offer type="Храна">
+            <productName>Начос</productName>
+            <quantity>500гр.</quantity>
+            <price currency="BGN">8.99</price>
+        </offer>
+        <offer type="Напитка">
+            <productName>Кола</productName>
+            <quantity>500мл.</quantity>
+            <price currency="BGN">7.99</price>
+        </offer>
+        <offer type="Напитка">
+            <productName>Кола</productName>
+            <quantity>750мл.</quantity>
+            <price currency="BGN">8.99</price>
+        </offer>
+    </food>
+</cinema>

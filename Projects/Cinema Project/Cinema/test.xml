@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cinema SYSTEM "Cinema.dtd">
+<cinema>
+    <cinemaName>Кино Арена - Варна</cinemaName>
+    <contacts>
+        <country>България</country>
+        <city>Варна</city>
+        <street>ул. Акад. Андрей Сахаров</street>
+        <email>kino_varna@kinoarena.bg</email>
+        <phone>02 4047 133</phone>
+    </contacts>
+    <staff>
+        <employee id="1" gender="Мъж" job="Касиер">
+            <employeeName>Христо Иванов</employeeName>
+            <employeeEmail>VasoGechev@abv.bg</employeeEmail>
+            <employeePhone>0888 848 323</employeePhone>
+            <salary currency="BGN">1800</salary>
+        </employee>
+        <employee id="2" gender="Жена" job="Разпоредител">
+            <employeeName>Карина Цецкова</employeeName>
+            <employeeEmail>Karina_Snejanova@gmail.bg</employeeEmail>
+            <employeePhone>0887 358 627</employeePhone>
+            <salary currency="BGN">1300</salary>
+        </employee>
+        <employee id="3" gender="Жена" job="Касиер">
+            <employeeName>Сийка Теодославова</employeeName>
+            <employeeEmail>SijkaValentinova@yahoo.bg</employeeEmail>
+            <employeePhone>0889 096 875</employeePhone>
+            <salary currency="BGN">1150</salary>
+        </employee>
+        <employee id="4" gender="Жена" job="КафеСлужител">
+            <employeeName>Мариела Янова</employeeName>
+            <employeeEmail>MarielaRozalinova@abv.bg</employeeEmail>
+            <employeePhone>0888 768 598</employeePhone>
+            <salary currency="BGN">1150</salary>
+        </employee>
+    </staff>
+    <movies>
+        <movie genre="Фантастика" category="3Д">
+            <movieName>Спайдърмен: Няма път към дома</movieName>
+            <actors>
+                Зендая, Том Холанд, Бенедикт Къмбърбач, Мариса Томей, Джейми Фокс, Ангури Райс
+            </actors>
+            <movieDescription>
+                Питър Паркър е свалил маската и вече не може да раздели нормалния си живот от този на супергерой.
+                Когато моли за помощ Доктор Стрейндж, залогът става още по-опасен.
+                Питър ще разбере какво наистина означава да си Спайдърмен.
+            </movieDescription>
+            <duration>150 минути</duration>
+            <projections>15:00, 16:30, 20:15</projections>
+            <hall>2</hall>
+            <ticket currency="BGN">11</ticket>
+        </movie>
+        <movie genre="Екшън" category="2Д">
+            <movieName>Матрицата: Възкресение</movieName>
+            <actors>
+                Киану Рийвс, Приянка Чопра, Джейда Пинкет Смит, Джонатан Гроф, Джесика Хенуик, Яхия Абдул-Матийн ІІ, Кари-Ан Мос
+            </actors>
+            <movieDescription>
+                Продължение на историята обединява кинематографичните икони Neo And Trinity,
+                докато се впускат обратно в Матрицата и още по -дълбоко в заешката дупка.
+                Съкрушително ново приключение с екшън и епичен мащаб, то е разположено в познат,
+                но още по-провокативен свят, където реалността е по-субективна от всякога.
+                Всичко, което е необходимо, за да се види истината, е да освободите ума си.
+            </movieDescription>
+            <duration>155 минути</duration>
+            <projections>13:15, 18:15, 21:15</projections>
+            <hall>3</hall>
+            <ticket currency="BGN">9</ticket>
+        </movie>
+        <movie genre="Комедия" category="2Д">
+            <movieName>Бай Иван: Филмът</movieName>
+            <actors>
+                Димитър Кирязов, Силвия Йорданова
+            </actors>
+            <movieDescription>
+                Филмът е базиран на изключително популярния образ Бай Иван от Youtube канала “Светът на Ванката”.
+            </movieDescription>
+            <duration>95 минути</duration>
+            <projections>14:15, 19:00</projections>
+            <hall>1</hall>
+            <ticket currency="BGN">9</ticket>
+        </movie>
+        <movie genre="Мистерии" category="2Д">
+            <movieName>Улицата на кошмарите</movieName>
+            <actors>
+                Брадли Купър, Кейт Бланшет, Руни Мара и Тони Колет
+            </actors>
+            <movieDescription>
+                Улицата на кошмарите е адаптация на едноименния роман на Уилям Линдзи Грешам от 1946 година
+                и разказва за Стантън Карлайл (Брадли Купър) – бивш карнавален работник,
+                който се превръща в една от топ атракциите в нощните клубове на големия град.
+                Чрез различни трикове, които заимства от своята колежка Моли (Тони Колет),
+                както и с помощта на приятелката си Зийна (Руни Мара), Стантън създава впечатлението,
+                че е могъщ медиум, способен да чете умовете на хората. Първоначално идеята е просто да
+                впечатлява и забавлява тълпата на карнавала, но стремежът към слава и богатство става
+                причина представлението да  се превърне в средство за финансови измами,
+                чиято цел са по-заможните жители на града. Така Стантън попада в полезрението на
+                психиатъра д-р Лилит Ритър (Кейт Бланшет), която се опитва да
+                го изобличи като шарлатанин, но впоследствие става част от схемите му.
+            </movieDescription>
+            <duration>150 минути</duration>
+            <projections>14:30, 17:45, 20:45</projections>
+            <hall>4</hall>
+            <ticket currency="BGN">9</ticket>
+        </movie>
+    </movies>
+    <food>
+        <offer type="Храна">
+            <productName>Пуканки</productName>
+            <quantity>Средни</quantity>
+            <price currency="BGN">5.99</price>
+        </offer>
+        <offer type="Храна">
+            <productName>Пуканки</productName>
+            <quantity>Големи</quantity>
+            <price currency="BGN">7.99</price>
+        </offer>
+        <offer type="Храна">
+            <productName>Начос</productName>
+            <quantity>500гр</quantity>
+            <price currency="BGN">7.99</price>
+        </offer>
+        <offer type="Напитка">
+            <productName>Кола</productName>
+            <quantity>500мл.</quantity>
+            <price currency="BGN">6.99</price>
+        </offer>
+        <offer type="Напитка">
+            <productName>Кола</productName>
+            <quantity>750мл.</quantity>
+            <price currency="BGN">8.99</price>
+        </offer>
+    </food>
+</cinema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><accesses version="1.0">
+    <employee>
+        <name>Васо Евлогиев</name>
+        <job>Администратор</job>
+        <conection>VasoGechev@abv.bg, 0888 848 323</conection>
+    </employee>
+    <employee>
+        <name>Карина Цецкова</name>
+        <job>Разпоредител</job>
+        <conection>Karina_Snejanova@gmail.bg, 0887 358 627</conection>
+    </employee>
+    <employee>
+        <name>Сийка Теодославова</name>
+        <job>Касиер</job>
+        <conection>SijkaValentinova@yahoo.bg, 0889 096 875</conection>
+    </employee>
+    <employee>
+        <name>Мариела Янова</name>
+        <job>КафеСлужител</job>
+        <conection>MarielaRozalinova@abv.bg, 0888 768 598</conection>
+    </employee>
+</accesses>
